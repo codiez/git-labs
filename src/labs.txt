@@ -670,9 +670,18 @@ Output:
 =cat
 EOF
 
-p. The output of the @checkout@ command explains the situation pretty
-well.  Older versions of git will complain about not being on a local
-branch.  In any case, don't worry about that for now.
+p. A "detached HEAD" message in git just means that HEAD (the part of
+git that tracks what your current working directory should match) is
+pointing directly to a commit rather than a branch. Any changes that
+are committed in this state are only remembered as long as you don't
+switch to a different branch. As soon as you checkout a new branch or
+tag, the detached commits will be "lost". If you want to save commits
+done in a detached state, you need to create a branch to remember the
+commits.
+
+p. Older versions of git will complain about not being on a local
+branch rather than being in a detached HEAD state. In any case, don't
+worry about that for now.
 
 p. Notice the contents of the hello.rb file are the original contents.
 
