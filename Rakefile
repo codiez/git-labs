@@ -25,11 +25,13 @@ task :not_dirty do
 end
 
 desc "Publish the Git Immersion web site."
-task :publish => [:not_dirty, :build, :labs] do
+task :publish => [:not_dirty, :build, :labs, "dist/git_tutorial.zip"] do
   sh 'git checkout 2.0'
+  cp "dist/git_tutorial.zip", "git_tutorial/git_tutorial.zip"
   head = `git log --pretty="%h" -n1`.strip
   sh 'git checkout gh-pages'
   cp FileList['git_tutorial/html/*'], '.'
+  cp 'git_tutorial/git_tutorial.zip', '.'
   sh 'git add .'
   sh "git commit -m 'Updated docs to #{head}'"
   sh 'git push'
