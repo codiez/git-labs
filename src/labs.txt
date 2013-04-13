@@ -623,6 +623,11 @@ p. to checkout a particular branch.
 p. And yes, I do mistype @git@ as @get@ or @got@ often enough to
 create aliases for them.
 
+p(note). *Note:* Some of these shell aliases are a bit aggressive. In
+particular, @gs@ will conflict with the Linux GhostScript program.
+Recently I started using the @go@ programming language and had to
+disable the @go@ alias above. So use these aliases with caution.
+
 ----------------------------------------------------------------------
 h1. Getting Old Versions
 
