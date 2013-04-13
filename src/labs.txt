@@ -85,7 +85,7 @@ Execute:
 git init
 =init
 +git config user.name "Jim Weirich"
-+git config user.email "jim (at) newcontext.com"
++git config user.email "jim (at) neo.com"
 
 Output:
 =init
@@ -2161,7 +2161,7 @@ ls
 =ls2
 +cd cloned_hello
 +git config user.name "Jim Weirich"
-+git config user.email "jim (at) newcontext.com"
++git config user.email "jim (at) neo.com"
 +cd ..
 
 Output:
@@ -2649,4 +2649,4 @@ p. Here are some topics you might want to research on your own:
 h1. Thank You
 
 p. Thank you for trying out the Git Immersion Labs.  Feel free to send
-comments to jim.weirich@gmail.com.
+comments to jim@neo.com.
