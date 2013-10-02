@@ -60,7 +60,7 @@
 <p>This should show the latest commit made in the repository.  The SHA1 hash on your system is probably different that what is on mine, but you should see something like this.</p>
 <h4>Output:</h4>
 <pre class="sample">$ git hist --max-count=1
-* 71de32c 2013-10-02 | Added a Rakefile. (HEAD, master) [Jim Weirich]</pre>
+* d31f7c0 2013-10-02 | Added a Rakefile. (HEAD, master) [Jim Weirich]</pre>
 <h2>Dumping the Latest Commit <em>02</em></h2>
 <p>Using the SHA1 hash from the commit listed above &#8230;</p>
 <h4>Execute:</h4>
@@ -68,13 +68,13 @@
 git cat-file -p &lt;hash&gt;</pre>
 <p>Here&#8217;s my output &#8230;</p>
 <h4>Output:</h4>
-<pre class="sample">$ git cat-file -t 71de32c
+<pre class="sample">$ git cat-file -t d31f7c0
 commit
-$ git cat-file -p 71de32c
+$ git cat-file -p d31f7c0
 tree 096b74c56bfc6b40e754fc0725b8c70b2038b91e
-parent 890cd798b09651971bbcc77412abbfa3e6931132
-author Jim Weirich &lt;jim (at) edgecase.com&gt; 1380709313 +0200
-committer Jim Weirich &lt;jim (at) edgecase.com&gt; 1380709313 +0200
+parent da840fa3d7176bed0196892fb319af359e7ae337
+author Jim Weirich &lt;jim (at) edgecase.com&gt; 1380724720 +0200
+committer Jim Weirich &lt;jim (at) edgecase.com&gt; 1380724720 +0200
 
 Added a Rakefile.
 </pre>
@@ -120,7 +120,7 @@ puts "Hello, #{name}!"
   <div id="show_bookmarks"></div>
   <div id="no_bookmarks"></div>
   <ul>
-    <li id="lab_0_link"><a href="index.html"><span>&nbsp;</span>Home Cover Page</a></li>
+    <li id="lab_0_link"><a href="/git-workshop"><span>&nbsp;</span>Home Cover Page</a></li>
           <li id="lab_1_link" data-lab-id="1"><a href="lab_01.html"><span>1:</span> Setup</a></li>
           <li id="lab_2_link" data-lab-id="2"><a href="lab_02.html"><span>2:</span> More Setup</a></li>
           <li id="lab_3_link" data-lab-id="3"><a href="lab_03.html"><span>3:</span> Create a Project</a></li>

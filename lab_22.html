@@ -68,9 +68,9 @@ ORIG_HEAD	description	info		refs
 <pre class="instructions">ls -C .git/objects</pre>
 <h4>Output:</h4>
 <pre class="sample">$ ls -C .git/objects
-09	24	31	44	69	78	9c	c4	e7	pack
-11	27	3a	57	6b	89	af	cd	e8
-13	28	43	59	71	97	b5	e4	info
+09	27	3a	53	69	88	97	b5	da	info
+11	28	43	55	6b	8a	9c	c4	e4	pack
+24	2c	45	59	78	95	af	d3	e7
 </pre>
 <p>You should see a bunch of directories with 2 letter names.  The directory names are the first two letters of the sha1 hash of the object stored in git.</p>
 <h2>Deeper into the Object Store <em>03</em></h2>
@@ -114,7 +114,7 @@ $ ls .git/refs/tags
 v1
 v1-beta
 $ cat .git/refs/tags/v1
-3aae7fdafc9bcb15e6c1b67973c30b623916933b
+8a4e4b7ea0bd56689044abb696f65581ad8d7027
 </pre>
 <p>You should recognize the files in the tags subdirectory.  Each file corresponds to a tag you created with the <code>git tag</code> command earlier. Its content is just the hash of the commit tied to the tag.</p>
 <p>The heads directory is similar, but is used for branches rather than tags.  We only have one branch at the moment, so all you will see is master in this directory.</p>
@@ -133,7 +133,7 @@ ref: refs/heads/master
   <div id="show_bookmarks"></div>
   <div id="no_bookmarks"></div>
   <ul>
-    <li id="lab_0_link"><a href="index.html"><span>&nbsp;</span>Home Cover Page</a></li>
+    <li id="lab_0_link"><a href="/git-workshop"><span>&nbsp;</span>Home Cover Page</a></li>
           <li id="lab_1_link" data-lab-id="1"><a href="lab_01.html"><span>1:</span> Setup</a></li>
           <li id="lab_2_link" data-lab-id="2"><a href="lab_02.html"><span>2:</span> More Setup</a></li>
           <li id="lab_3_link" data-lab-id="3"><a href="lab_03.html"><span>3:</span> Create a Project</a></li>

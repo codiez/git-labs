@@ -58,18 +58,18 @@
 <pre class="instructions">git hist --all</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git hist --all
-* 83446a0 2013-10-02 | Updated Rakefile (greet) [Jim Weirich]
-* c1ef081 2013-10-02 | Hello uses Greeter [Jim Weirich]
-* dcd26d4 2013-10-02 | Added greeter class [Jim Weirich]
-| * 4cfc271 2013-10-02 | Added README (HEAD, master) [Jim Weirich]
+* 546d144 2013-10-02 | Added README (HEAD, master) [Jim Weirich]
+| * caca358 2013-10-02 | Updated Rakefile (greet) [Jim Weirich]
+| * 3a8012b 2013-10-02 | Hello uses Greeter [Jim Weirich]
+| * 50e2a60 2013-10-02 | Added greeter class [Jim Weirich]
 |/  
-* 71de32c 2013-10-02 | Added a Rakefile. [Jim Weirich]
-* 890cd79 2013-10-02 | Moved hello.rb to lib [Jim Weirich]
-* 5714627 2013-10-02 | Add an author/email comment [Jim Weirich]
-* 3aae7fd 2013-10-02 | Added a comment (v1) [Jim Weirich]
-* 3170c77 2013-10-02 | Added a default value (v1-beta) [Jim Weirich]
-* e864c30 2013-10-02 | Using ARGV [Jim Weirich]
-* 13a2fc0 2013-10-02 | First Commit [Jim Weirich]</pre>
+* d31f7c0 2013-10-02 | Added a Rakefile. [Jim Weirich]
+* da840fa 2013-10-02 | Moved hello.rb to lib [Jim Weirich]
+* 8821b83 2013-10-02 | Add an author/email comment [Jim Weirich]
+* 8a4e4b7 2013-10-02 | Added a comment (v1) [Jim Weirich]
+* 458cb9c 2013-10-02 | Added a default value (v1-beta) [Jim Weirich]
+* 3aa4a6f 2013-10-02 | Using ARGV [Jim Weirich]
+* 2c7b373 2013-10-02 | First Commit [Jim Weirich]</pre>
 <p>Here is our first chance to see the <code>--graph</code> option on <code>git hist</code> in action. Adding the <code>--graph</code> option to <code>git log</code> causes it to draw the commit tree using simple <span class="caps">ASCII</span> characters.  We can see both branches (greet and master), and that the master branch is the current <span class="caps">HEAD</span>. The common ancestor to both branches is the &#8220;Added a Rakefile&#8221; branch.</p>
 <p>The <code>--all</code> flag makes sure that we see all the branches.  The default is to show only the current branch.</p>
   </div>
@@ -79,7 +79,7 @@
   <div id="show_bookmarks"></div>
   <div id="no_bookmarks"></div>
   <ul>
-    <li id="lab_0_link"><a href="index.html"><span>&nbsp;</span>Home Cover Page</a></li>
+    <li id="lab_0_link"><a href="/git-workshop"><span>&nbsp;</span>Home Cover Page</a></li>
           <li id="lab_1_link" data-lab-id="1"><a href="lab_01.html"><span>1:</span> Setup</a></li>
           <li id="lab_2_link" data-lab-id="2"><a href="lab_02.html"><span>2:</span> More Setup</a></li>
           <li id="lab_3_link" data-lab-id="3"><a href="lab_03.html"><span>3:</span> Create a Project</a></li>
