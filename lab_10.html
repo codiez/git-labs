@@ -40,10 +40,10 @@
   
   <a id="table_of_contents_link" href="#">Table of Contents</a>
   <a id="bookmark_link"><span id="bookmark"></span>Bookmark this lab</a>
-  <a id="edgecase_link" href="http://edgecase.com" target="_blank">EdgeCase</a>
+  <a id="edgecase_link" href="http://www.codiez.co.za" target="_blank">Codiez</a>
 </nav>
     <h1 class="lab_title"><em>lab 10</em> History</h1>
-    <a href="http://edgecase.com" target=_blank" id="other_edgecase_link">EdgeCase</a>
+    <a href="http://www.codiez.co.za" target="_blank" id="other_edgecase_link">EdgeCase</a>
   </header>
 
   <div id="main_content">
@@ -58,27 +58,27 @@
 <p>You should see &#8230;</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log
-commit 8a4e4b7ea0bd56689044abb696f65581ad8d7027
+commit 8a109ffbc5b100d73fd581fe83db53539ce01462
 Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 16:38:40 2013 +0200
+Date:   Wed Oct 2 17:40:16 2013 +0200
 
     Added a comment
 
-commit 458cb9c8ce29f4583e8f5e16ee5805ebcc3919d1
+commit cccc7ac2fd2115f36f8c4d5cfed64b354a8d2519
 Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 16:38:40 2013 +0200
+Date:   Wed Oct 2 17:40:16 2013 +0200
 
     Added a default value
 
-commit 3aa4a6fc44f8a39e7f5d86628a7acd635a5bfada
+commit 7a753c8ad1c2aada514b332d54f5c0450951a1e0
 Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 16:38:39 2013 +0200
+Date:   Wed Oct 2 17:40:16 2013 +0200
 
     Using ARGV
 
-commit 2c7b3738237dfa14c70bd353d2ba2845b3b1139a
+commit fb709c96babaac44077b60c1aac6c029ed8af554
 Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 16:38:39 2013 +0200
+Date:   Wed Oct 2 17:40:16 2013 +0200
 
     First Commit
 </pre>
@@ -90,10 +90,10 @@ Date:   Wed Oct 2 16:38:39 2013 +0200
 <p>You should see &#8230;</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log --pretty=oneline
-8a4e4b7ea0bd56689044abb696f65581ad8d7027 Added a comment
-458cb9c8ce29f4583e8f5e16ee5805ebcc3919d1 Added a default value
-3aa4a6fc44f8a39e7f5d86628a7acd635a5bfada Using ARGV
-2c7b3738237dfa14c70bd353d2ba2845b3b1139a First Commit
+8a109ffbc5b100d73fd581fe83db53539ce01462 Added a comment
+cccc7ac2fd2115f36f8c4d5cfed64b354a8d2519 Added a default value
+7a753c8ad1c2aada514b332d54f5c0450951a1e0 Using ARGV
+fb709c96babaac44077b60c1aac6c029ed8af554 First Commit
 </pre>
 <h2>Controlling Which Entries are Displayed <em>02</em></h2>
 <p>There are a lot of options for selecting which entries are displayed in the log.  Play around with the following options:</p>
@@ -113,10 +113,10 @@ git log --pretty=oneline --all</pre>
 <p>It looks like this:</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-* 8a4e4b7 2013-10-02 | Added a comment (HEAD, master) [Jim Weirich]
-* 458cb9c 2013-10-02 | Added a default value [Jim Weirich]
-* 3aa4a6f 2013-10-02 | Using ARGV [Jim Weirich]
-* 2c7b373 2013-10-02 | First Commit [Jim Weirich]</pre>
+* 8a109ff 2013-10-02 | Added a comment (HEAD, master) [Jim Weirich]
+* cccc7ac 2013-10-02 | Added a default value [Jim Weirich]
+* 7a753c8 2013-10-02 | Using ARGV [Jim Weirich]
+* fb709c9 2013-10-02 | First Commit [Jim Weirich]</pre>
 <p>Let&#8217;s look at it in detail:</p>
 <ul>
 	<li><code>--pretty="..."</code> defines the format of the output.</li>
