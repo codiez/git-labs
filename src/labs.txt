@@ -13,8 +13,8 @@ you have git already setup, you can skip down to the line ending
 section.
 
 execute:
-git config --global user.name "Your Name"
-git config --global user.email "your_email@whatever.com"
+git config --global user.name "Ismail"
+git config --global user.email "ismail@codiez.co.za"
 
 h2. Setup Line Ending Preferences
 
@@ -42,7 +42,7 @@ h2. Get the Tutorial package.
 p. Git the tutorial package from either:
 
 * The memory sticks provided in the tutorial
-* The URL "http://gitimmersion.com/git_tutorial.zip":http://gitimmersion.com/git_tutorial.zip
+* The URL "http://www.codiez.co.za/git-labs/git_tutorial.zip":http://www.codiez.co.za/git-labs/git_tutorial.zip
 
 h2. Unzip the tutorial
 
@@ -2623,5 +2623,5 @@ p. Here are some topics you might want to research on your own:
 ----------------------------------------------------------------------
 h1. Thank You
 
-p. Thank you for trying out the Git Immersion Labs.  Feel free to send
-comments to jim.weirich@gmail.com.
+p. Thank you for attending this Git Workshop.  Feel free to send
+comments to ismail@codiez.co.za

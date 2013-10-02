@@ -182,6 +182,13 @@ html, body {
   height: 40px;
 }
 
+#codiez_link {
+  top: 96px;
+  left: 50px;
+  width: 334px;
+  height: 40px;
+}
+
 #other_edgecase_link {
   display: none;
 }
