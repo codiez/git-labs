@@ -8,16 +8,16 @@
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script type="text/javascript">
-   var _gaq = _gaq || [];
-   _gaq.push(['_setAccount', 'UA-1142510-7']);
-   _gaq.push(['_trackPageview']);
-   (function() {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-   })();
-  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4025799-13', 'codiez.co.za');
+  ga('send', 'pageview');
+
+</script>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="jquery.hotkeys.js"></script>
   <script type="text/javascript" src="UI.js"></script>
@@ -32,7 +32,7 @@
     <img src="pager_blur.png">
   </div>
   <header id="header">
-    <a href="http://www.codiez.co.za/git-workshop" id="home_link">Git Workshop</a>
+    <a href="/git-workshop" id="home_link">Git Workshop</a>
     <nav id="pager">
       <a id="arrow_next" class="arrow" href="lab_24.html">Next</a>
   
@@ -60,7 +60,7 @@
 <p>This should show the latest commit made in the repository.  The SHA1 hash on your system is probably different that what is on mine, but you should see something like this.</p>
 <h4>Output:</h4>
 <pre class="sample">$ git hist --max-count=1
-* 7f89ff1 2013-10-02 | Added a Rakefile. (HEAD, master) [Jim Weirich]</pre>
+* 71de32c 2013-10-02 | Added a Rakefile. (HEAD, master) [Jim Weirich]</pre>
 <h2>Dumping the Latest Commit <em>02</em></h2>
 <p>Using the SHA1 hash from the commit listed above &#8230;</p>
 <h4>Execute:</h4>
@@ -68,13 +68,13 @@
 git cat-file -p &lt;hash&gt;</pre>
 <p>Here&#8217;s my output &#8230;</p>
 <h4>Output:</h4>
-<pre class="sample">$ git cat-file -t 7f89ff1
+<pre class="sample">$ git cat-file -t 71de32c
 commit
-$ git cat-file -p 7f89ff1
+$ git cat-file -p 71de32c
 tree 096b74c56bfc6b40e754fc0725b8c70b2038b91e
-parent 4878a54ad928df3e8a7fe7b7d440ba9bd00b4cc9
-author Jim Weirich &lt;jim (at) edgecase.com&gt; 1380706581 +0200
-committer Jim Weirich &lt;jim (at) edgecase.com&gt; 1380706581 +0200
+parent 890cd798b09651971bbcc77412abbfa3e6931132
+author Jim Weirich &lt;jim (at) edgecase.com&gt; 1380709313 +0200
+committer Jim Weirich &lt;jim (at) edgecase.com&gt; 1380709313 +0200
 
 Added a Rakefile.
 </pre>

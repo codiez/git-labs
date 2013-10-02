@@ -8,16 +8,16 @@
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script type="text/javascript">
-   var _gaq = _gaq || [];
-   _gaq.push(['_setAccount', 'UA-1142510-7']);
-   _gaq.push(['_trackPageview']);
-   (function() {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-   })();
-  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4025799-13', 'codiez.co.za');
+  ga('send', 'pageview');
+
+</script>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="jquery.hotkeys.js"></script>
   <script type="text/javascript" src="UI.js"></script>
@@ -32,7 +32,7 @@
     <img src="pager_blur.png">
   </div>
   <header id="header">
-    <a href="http://www.codiez.co.za/git-workshop" id="home_link">Git Workshop</a>
+    <a href="/git-workshop" id="home_link">Git Workshop</a>
     <nav id="pager">
       <a id="arrow_next" class="arrow" href="lab_11.html">Next</a>
   
@@ -58,27 +58,27 @@
 <p>You should see &#8230;</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log
-commit 089a0d012966e8861a44a8043439d260fe3ea7a5
+commit 3aae7fdafc9bcb15e6c1b67973c30b623916933b
 Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 11:36:21 2013 +0200
+Date:   Wed Oct 2 12:21:53 2013 +0200
 
     Added a comment
 
-commit c5eb5e551795c38d578f1349bc257b8df6df011e
+commit 3170c77e59e1aaec34fc38c5ce450323cb8fc591
 Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 11:36:21 2013 +0200
+Date:   Wed Oct 2 12:21:53 2013 +0200
 
     Added a default value
 
-commit 17763d4461ad0c1595acb8dd4a01f425359459d5
+commit e864c3052c5e124a5d88d840d13630770768315f
 Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 11:36:21 2013 +0200
+Date:   Wed Oct 2 12:21:53 2013 +0200
 
     Using ARGV
 
-commit ddef2658bda09c95118576e0f553576cb0502fe1
+commit 13a2fc0f7940f8a2bdf74465406b74893b9aaeee
 Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 11:36:21 2013 +0200
+Date:   Wed Oct 2 12:21:53 2013 +0200
 
     First Commit
 </pre>
@@ -90,10 +90,10 @@ Date:   Wed Oct 2 11:36:21 2013 +0200
 <p>You should see &#8230;</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log --pretty=oneline
-089a0d012966e8861a44a8043439d260fe3ea7a5 Added a comment
-c5eb5e551795c38d578f1349bc257b8df6df011e Added a default value
-17763d4461ad0c1595acb8dd4a01f425359459d5 Using ARGV
-ddef2658bda09c95118576e0f553576cb0502fe1 First Commit
+3aae7fdafc9bcb15e6c1b67973c30b623916933b Added a comment
+3170c77e59e1aaec34fc38c5ce450323cb8fc591 Added a default value
+e864c3052c5e124a5d88d840d13630770768315f Using ARGV
+13a2fc0f7940f8a2bdf74465406b74893b9aaeee First Commit
 </pre>
 <h2>Controlling Which Entries are Displayed <em>02</em></h2>
 <p>There are a lot of options for selecting which entries are displayed in the log.  Play around with the following options:</p>
@@ -113,10 +113,10 @@ git log --pretty=oneline --all</pre>
 <p>It looks like this:</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-* 089a0d0 2013-10-02 | Added a comment (HEAD, master) [Jim Weirich]
-* c5eb5e5 2013-10-02 | Added a default value [Jim Weirich]
-* 17763d4 2013-10-02 | Using ARGV [Jim Weirich]
-* ddef265 2013-10-02 | First Commit [Jim Weirich]</pre>
+* 3aae7fd 2013-10-02 | Added a comment (HEAD, master) [Jim Weirich]
+* 3170c77 2013-10-02 | Added a default value [Jim Weirich]
+* e864c30 2013-10-02 | Using ARGV [Jim Weirich]
+* 13a2fc0 2013-10-02 | First Commit [Jim Weirich]</pre>
 <p>Let&#8217;s look at it in detail:</p>
 <ul>
 	<li><code>--pretty="..."</code> defines the format of the output.</li>

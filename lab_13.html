@@ -8,16 +8,16 @@
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script type="text/javascript">
-   var _gaq = _gaq || [];
-   _gaq.push(['_setAccount', 'UA-1142510-7']);
-   _gaq.push(['_trackPageview']);
-   (function() {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-   })();
-  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4025799-13', 'codiez.co.za');
+  ga('send', 'pageview');
+
+</script>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="jquery.hotkeys.js"></script>
   <script type="text/javascript" src="UI.js"></script>
@@ -32,7 +32,7 @@
     <img src="pager_blur.png">
   </div>
   <header id="header">
-    <a href="http://www.codiez.co.za/git-workshop" id="home_link">Git Workshop</a>
+    <a href="/git-workshop" id="home_link">Git Workshop</a>
     <nav id="pager">
       <a id="arrow_next" class="arrow" href="lab_14.html">Next</a>
   
@@ -76,7 +76,7 @@ do so (now or later) by using -b with the checkout command again. Example:
 
   git checkout -b new_branch_name
 
-HEAD is now at c5eb5e5... Added a default value
+HEAD is now at 3170c77... Added a default value
 $ cat hello.rb
 name = ARGV.first || "World"
 
@@ -92,11 +92,11 @@ puts "Hello, #{name}!"
 git checkout v1-beta</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git checkout v1
-Previous HEAD position was c5eb5e5... Added a default value
-HEAD is now at 089a0d0... Added a comment
+Previous HEAD position was 3170c77... Added a default value
+HEAD is now at 3aae7fd... Added a comment
 $ git checkout v1-beta
-Previous HEAD position was 089a0d0... Added a comment
-HEAD is now at c5eb5e5... Added a default value
+Previous HEAD position was 3aae7fd... Added a comment
+HEAD is now at 3170c77... Added a default value
 </pre>
 <h2>Viewing Tags using the <code>tag</code> command <em>04</em></h2>
 <p>You can see what tags are available using the <code>git tag</code> command.</p>
@@ -113,10 +113,10 @@ v1-beta
 <pre class="instructions">git hist master --all</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git hist master --all
-* 089a0d0 2013-10-02 | Added a comment (v1, master) [Jim Weirich]
-* c5eb5e5 2013-10-02 | Added a default value (HEAD, v1-beta) [Jim Weirich]
-* 17763d4 2013-10-02 | Using ARGV [Jim Weirich]
-* ddef265 2013-10-02 | First Commit [Jim Weirich]</pre>
+* 3aae7fd 2013-10-02 | Added a comment (v1, master) [Jim Weirich]
+* 3170c77 2013-10-02 | Added a default value (HEAD, v1-beta) [Jim Weirich]
+* e864c30 2013-10-02 | Using ARGV [Jim Weirich]
+* 13a2fc0 2013-10-02 | First Commit [Jim Weirich]</pre>
 <p>You can see both tags (<code>v1</code> and <code>v1-beta</code>) listed in the log output, along with the branch name (<code>master</code>).  Also <code>HEAD</code> shows you the currently checked out commit (which is <code>v1-beta</code> at the moment).</p>
   </div>
 
