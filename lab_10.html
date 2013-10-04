@@ -58,27 +58,27 @@
 <p>You should see &#8230;</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log
-commit 8a109ffbc5b100d73fd581fe83db53539ce01462
-Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 17:40:16 2013 +0200
+commit 6214c25c93e974d4fb9bb728c00435e5df3068dd
+Author: Ismail Dhorat &lt;ismail@codiez.co.za&gt;
+Date:   Fri Oct 4 08:53:30 2013 +0200
 
     Added a comment
 
-commit cccc7ac2fd2115f36f8c4d5cfed64b354a8d2519
-Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 17:40:16 2013 +0200
+commit 93cbc066aa876fe17633cffa2a25333f6aad8c86
+Author: Ismail Dhorat &lt;ismail@codiez.co.za&gt;
+Date:   Fri Oct 4 08:53:30 2013 +0200
 
     Added a default value
 
-commit 7a753c8ad1c2aada514b332d54f5c0450951a1e0
-Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 17:40:16 2013 +0200
+commit d4dcad0d37bd625969b3c6fb5ae36bf096c2257d
+Author: Ismail Dhorat &lt;ismail@codiez.co.za&gt;
+Date:   Fri Oct 4 08:53:30 2013 +0200
 
     Using ARGV
 
-commit fb709c96babaac44077b60c1aac6c029ed8af554
-Author: Jim Weirich &lt;jim (at) edgecase.com&gt;
-Date:   Wed Oct 2 17:40:16 2013 +0200
+commit 090c548c2afa4abe05508c1cc10c84d117260f20
+Author: Ismail Dhorat &lt;ismail@codiez.co.za&gt;
+Date:   Fri Oct 4 08:53:29 2013 +0200
 
     First Commit
 </pre>
@@ -90,10 +90,10 @@ Date:   Wed Oct 2 17:40:16 2013 +0200
 <p>You should see &#8230;</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log --pretty=oneline
-8a109ffbc5b100d73fd581fe83db53539ce01462 Added a comment
-cccc7ac2fd2115f36f8c4d5cfed64b354a8d2519 Added a default value
-7a753c8ad1c2aada514b332d54f5c0450951a1e0 Using ARGV
-fb709c96babaac44077b60c1aac6c029ed8af554 First Commit
+6214c25c93e974d4fb9bb728c00435e5df3068dd Added a comment
+93cbc066aa876fe17633cffa2a25333f6aad8c86 Added a default value
+d4dcad0d37bd625969b3c6fb5ae36bf096c2257d Using ARGV
+090c548c2afa4abe05508c1cc10c84d117260f20 First Commit
 </pre>
 <h2>Controlling Which Entries are Displayed <em>02</em></h2>
 <p>There are a lot of options for selecting which entries are displayed in the log.  Play around with the following options:</p>
@@ -104,7 +104,7 @@ git log --pretty=oneline --author=&lt;your name&gt;
 git log --pretty=oneline --all</pre>
 <p>See man git-log for all the details.</p>
 <h2>Getting Fancy <em>03</em></h2>
-<p>Here&#8217;s what I use to review the changes made in the last week. I&#8217;ll add <code>--author=jim</code> if I only want to see changes I made.</p>
+<p>Here&#8217;s what I use to review the changes made in the last week. I&#8217;ll add <code>--author=ismail</code> if I only want to see changes I made.</p>
 <pre class="instructions">git log --all --pretty=format:'%h %cd %s (%an)' --since='7 days ago'</pre>
 <h2>The Ultimate Log Format <em>04</em></h2>
 <p>Over time, I&#8217;ve decided that I like the following log format for most of my work.</p>
@@ -113,10 +113,10 @@ git log --pretty=oneline --all</pre>
 <p>It looks like this:</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-* 8a109ff 2013-10-02 | Added a comment (HEAD, master) [Jim Weirich]
-* cccc7ac 2013-10-02 | Added a default value [Jim Weirich]
-* 7a753c8 2013-10-02 | Using ARGV [Jim Weirich]
-* fb709c9 2013-10-02 | First Commit [Jim Weirich]</pre>
+* 6214c25 2013-10-04 | Added a comment (HEAD, master) [Ismail Dhorat]
+* 93cbc06 2013-10-04 | Added a default value [Ismail Dhorat]
+* d4dcad0 2013-10-04 | Using ARGV [Ismail Dhorat]
+* 090c548 2013-10-04 | First Commit [Ismail Dhorat]</pre>
 <p>Let&#8217;s look at it in detail:</p>
 <ul>
 	<li><code>--pretty="..."</code> defines the format of the output.</li>

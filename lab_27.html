@@ -58,18 +58,18 @@
 <pre class="instructions">git hist --all</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git hist --all
-* 0f2a5bc 2013-10-02 | Updated Rakefile (greet) [Jim Weirich]
-* eccd53d 2013-10-02 | Hello uses Greeter [Jim Weirich]
-* 9b9109f 2013-10-02 | Added greeter class [Jim Weirich]
-| * afd26b5 2013-10-02 | Added README (HEAD, master) [Jim Weirich]
+* ca114e1 2013-10-04 | Updated Rakefile (greet) [Ismail Dhorat]
+* 2f8a1f1 2013-10-04 | Hello uses Greeter [Ismail Dhorat]
+* 0f6b8e4 2013-10-04 | Added greeter class [Ismail Dhorat]
+| * c0e750d 2013-10-04 | Added README (HEAD, master) [Ismail Dhorat]
 |/  
-* f577535 2013-10-02 | Added a Rakefile. [Jim Weirich]
-* e1e4ca4 2013-10-02 | Moved hello.rb to lib [Jim Weirich]
-* ddee98f 2013-10-02 | Add an author/email comment [Jim Weirich]
-* 8a109ff 2013-10-02 | Added a comment (v1) [Jim Weirich]
-* cccc7ac 2013-10-02 | Added a default value (v1-beta) [Jim Weirich]
-* 7a753c8 2013-10-02 | Using ARGV [Jim Weirich]
-* fb709c9 2013-10-02 | First Commit [Jim Weirich]</pre>
+* 7cd47cd 2013-10-04 | Added a Rakefile. [Ismail Dhorat]
+* 9aaeb88 2013-10-04 | Moved hello.rb to lib [Ismail Dhorat]
+* dfcd971 2013-10-04 | Add an author/email comment [Ismail Dhorat]
+* 6214c25 2013-10-04 | Added a comment (v1) [Ismail Dhorat]
+* 93cbc06 2013-10-04 | Added a default value (v1-beta) [Ismail Dhorat]
+* d4dcad0 2013-10-04 | Using ARGV [Ismail Dhorat]
+* 090c548 2013-10-04 | First Commit [Ismail Dhorat]</pre>
 <p>Here is our first chance to see the <code>--graph</code> option on <code>git hist</code> in action. Adding the <code>--graph</code> option to <code>git log</code> causes it to draw the commit tree using simple <span class="caps">ASCII</span> characters.  We can see both branches (greet and master), and that the master branch is the current <span class="caps">HEAD</span>. The common ancestor to both branches is the &#8220;Added a Rakefile&#8221; branch.</p>
 <p>The <code>--all</code> flag makes sure that we see all the branches.  The default is to show only the current branch.</p>
   </div>

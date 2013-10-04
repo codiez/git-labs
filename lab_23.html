@@ -60,7 +60,7 @@
 <p>This should show the latest commit made in the repository.  The SHA1 hash on your system is probably different that what is on mine, but you should see something like this.</p>
 <h4>Output:</h4>
 <pre class="sample">$ git hist --max-count=1
-* f577535 2013-10-02 | Added a Rakefile. (HEAD, master) [Jim Weirich]</pre>
+* 7cd47cd 2013-10-04 | Added a Rakefile. (HEAD, master) [Ismail Dhorat]</pre>
 <h2>Dumping the Latest Commit <em>02</em></h2>
 <p>Using the SHA1 hash from the commit listed above &#8230;</p>
 <h4>Execute:</h4>
@@ -68,13 +68,13 @@
 git cat-file -p &lt;hash&gt;</pre>
 <p>Here&#8217;s my output &#8230;</p>
 <h4>Output:</h4>
-<pre class="sample">$ git cat-file -t f577535
+<pre class="sample">$ git cat-file -t 7cd47cd
 commit
-$ git cat-file -p f577535
-tree 096b74c56bfc6b40e754fc0725b8c70b2038b91e
-parent e1e4ca46f0c36fd6bcf78f4d07184e0239af6136
-author Jim Weirich &lt;jim (at) edgecase.com&gt; 1380728417 +0200
-committer Jim Weirich &lt;jim (at) edgecase.com&gt; 1380728417 +0200
+$ git cat-file -p 7cd47cd
+tree 2ab5200289e9065e64e20261dc5791e3243506eb
+parent 9aaeb88f22d7c81edc9cfaf80caac916c451f520
+author Ismail Dhorat &lt;ismail@codiez.co.za&gt; 1380869610 +0200
+committer Ismail Dhorat &lt;ismail@codiez.co.za&gt; 1380869610 +0200
 
 Added a Rakefile.
 </pre>
@@ -86,26 +86,26 @@ Added a Rakefile.
 <pre class="instructions">git cat-file -p &lt;treehash&gt;</pre>
 <p>Here&#8217;s what my tree looks like&#8230;</p>
 <h4>Output:</h4>
-<pre class="sample">$ git cat-file -p 096b74c
+<pre class="sample">$ git cat-file -p 2ab5200
 100644 blob 28e0e9d6ea7e25f35ec64a43f569b550e8386f90	Rakefile
-040000 tree e46f374f5b36c6f02fb3e9e922b79044f754d795	lib
+040000 tree d76f439c82a941fd42a84c9aa855782b65f4cc84	lib
 </pre>
 <p>Yep, I see the Rakefile and the lib directory.</p>
 <h2>Dumping the lib directory <em>04</em></h2>
 <h4>Execute:</h4>
 <pre class="instructions">git cat-file -p &lt;libhash&gt;</pre>
 <h4>Output:</h4>
-<pre class="sample">$ git cat-file -p e46f374
-100644 blob c45f26b6fdc7db6ba779fc4c385d9d24fc12cf72	hello.rb
+<pre class="sample">$ git cat-file -p d76f439
+100644 blob 4fada682816a5375519a95df5be6bc2d4b6ffc0a	hello.rb
 </pre>
 <p>There&#8217;s the <code>hello.rb</code> file.</p>
 <h2>Dumping the <code>hello.rb</code> file <em>05</em></h2>
 <h4>Execute:</h4>
 <pre class="instructions">git cat-file -p &lt;rbhash&gt;</pre>
 <h4>Output:</h4>
-<pre class="sample">$ git cat-file -p c45f26b
+<pre class="sample">$ git cat-file -p 4fada68
 # Default is World
-# Author: Jim Weirich (jim@somewhere.com)
+# Author: Ismail Dhorat (ismail@somewhere.com)
 name = ARGV.first || "World"
 
 puts "Hello, #{name}!"
