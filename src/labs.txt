@@ -82,8 +82,8 @@ repository from that directory, run the git init command.
 Execute:
 git init
 =init
-+git config user.name "Jim Weirich"
-+git config user.email "jim (at) edgecase.com"
++git config user.name "Ismail Dhorat"
++git config user.email "ismail@codiez.co.za"
 
 Output:
 =init
@@ -496,7 +496,7 @@ p. See man git-log for all the details.
 h2. Getting Fancy
 
 p. Here's what I use to review the changes made in the last week.
-I'll add @--author=jim@ if I only want to see changes I made.
+I'll add @--author=ismail@ if I only want to see changes I made.
 
 pre(instructions).
 git log --all --pretty=format:'%h %cd %s (%an)' --since='7 days ago'
@@ -1149,7 +1149,7 @@ p. Add an author comment to the program.
 
 File: hello.rb
 # Default is World
-# Author: Jim Weirich
+# Author: Ismail Dhorat
 name = ARGV.first || "World"
 
 puts "Hello, #{name}!"
@@ -1167,7 +1167,7 @@ email.
 
 File: hello.rb
 # Default is World
-# Author: Jim Weirich (jim@somewhere.com)
+# Author: Ismail Dhorat (ismail@somewhere.com)
 name = ARGV.first || "World"
 
 puts "Hello, #{name}!"
@@ -2137,8 +2137,8 @@ git clone hello cloned_hello
 ls
 =ls2
 +cd cloned_hello
-+git config user.name "Jim Weirich"
-+git config user.email "jim (at) edgecase.com"
++git config user.name "Ismail Dhorat"
++git config user.email "ismail@codiez.co.za"
 +cd ..
 
 Output:
