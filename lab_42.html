@@ -60,20 +60,20 @@ git hist --all</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git fetch
 From /Users/ismail/sandbox/repos_own/git-labs/auto/hello
-   ad0369c..0dd003f  master     -&gt; origin/master
+   8db103d..2844f81  master     -&gt; origin/master
 $ git hist --all
-* 0dd003f 2013-10-04 | Changed README in original repo (origin/master, origin/HEAD) [Ismail Dhorat]
-* ad0369c 2013-10-04 | Updated Rakefile (HEAD, origin/greet, master) [Ismail Dhorat]
-* a61c7f0 2013-10-04 | Hello uses Greeter [Ismail Dhorat]
-* 87444dd 2013-10-04 | Added greeter class [Ismail Dhorat]
-* ae3810d 2013-10-04 | Added README [Ismail Dhorat]
-* a9eb649 2013-10-04 | Added a Rakefile. [Ismail Dhorat]
-* 26c1a6d 2013-10-04 | Moved hello.rb to lib [Ismail Dhorat]
-* 8f90523 2013-10-04 | Add an author/email comment [Ismail Dhorat]
-* 86decba 2013-10-04 | Added a comment (v1) [Ismail Dhorat]
-* 702df14 2013-10-04 | Added a default value (v1-beta) [Ismail Dhorat]
-* a0edd4e 2013-10-04 | Using ARGV [Ismail Dhorat]
-* bd5d138 2013-10-04 | First Commit [Ismail Dhorat]</pre>
+* 2844f81 2013-10-06 | Changed README in original repo (origin/master, origin/HEAD) [Ismail Dhorat]
+* 8db103d 2013-10-06 | Updated Rakefile (HEAD, origin/greet, master) [Ismail Dhorat]
+* 30ae4be 2013-10-06 | Hello uses Greeter [Ismail Dhorat]
+* 8da6cc5 2013-10-06 | Added greeter class [Ismail Dhorat]
+* cad8e98 2013-10-06 | Added README [Ismail Dhorat]
+* 27b8b27 2013-10-06 | Added a Rakefile. [Ismail Dhorat]
+* 23944f0 2013-10-06 | Moved hello.rb to lib [Ismail Dhorat]
+* 273edac 2013-10-06 | Add an author/email comment [Ismail Dhorat]
+* 9efd33e 2013-10-06 | Added a comment (v1) [Ismail Dhorat]
+* 8b9a1c6 2013-10-06 | Added a default value (v1-beta) [Ismail Dhorat]
+* f6f4d6b 2013-10-06 | Using ARGV [Ismail Dhorat]
+* f98d857 2013-10-06 | First Commit [Ismail Dhorat]</pre>
 <p>At this point the repository has all the commits from the original repository, but they are not integrated into the the cloned repository&#8217;s local branches.</p>
 <p>Find the &#8220;Changed <span class="caps">README</span> in original repo&#8221; commit in the history above.  Notice that the commit includes &#8220;origin/master&#8221; and &#8220;origin/<span class="caps">HEAD</span>&#8221;.</p>
 <p>Now look at the &#8220;Updated Rakefile&#8221; commit.  You will see that it the local master branch points to this commit, not to the new commit that we just fetched.</p>

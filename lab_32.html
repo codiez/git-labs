@@ -62,30 +62,30 @@ git hist</pre>
 <pre class="sample">$ git checkout greet
 Already on 'greet'
 $ git hist
-*   15df5b5 2013-10-04 | Merged master fixed conflict. (HEAD, greet) [Ismail Dhorat]
+*   084a3a1 2013-10-06 | Merged master fixed conflict. (HEAD, greet) [Ismail Dhorat]
 |\  
-| * 425553b 2013-10-04 | Made interactive (master) [Ismail Dhorat]
-* |   ba4fb20 2013-10-04 | Merge branch 'master' into greet [Ismail Dhorat]
+| * 736de04 2013-10-06 | Made interactive (master) [Ismail Dhorat]
+* |   d1c6a6d 2013-10-06 | Merge branch 'master' into greet [Ismail Dhorat]
 |\ \  
 | |/  
-| * ae3810d 2013-10-04 | Added README [Ismail Dhorat]
-* | e901c8b 2013-10-04 | Updated Rakefile [Ismail Dhorat]
-* | 0a9e32e 2013-10-04 | Hello uses Greeter [Ismail Dhorat]
-* | 87bdd6f 2013-10-04 | Added greeter class [Ismail Dhorat]
+| * cad8e98 2013-10-06 | Added README [Ismail Dhorat]
+* | 6e84bb4 2013-10-06 | Updated Rakefile [Ismail Dhorat]
+* | b90deb7 2013-10-06 | Hello uses Greeter [Ismail Dhorat]
+* | 0a6c49b 2013-10-06 | Added greeter class [Ismail Dhorat]
 |/  
-* a9eb649 2013-10-04 | Added a Rakefile. [Ismail Dhorat]
-* 26c1a6d 2013-10-04 | Moved hello.rb to lib [Ismail Dhorat]
-* 8f90523 2013-10-04 | Add an author/email comment [Ismail Dhorat]
-* 86decba 2013-10-04 | Added a comment (v1) [Ismail Dhorat]
-* 702df14 2013-10-04 | Added a default value (v1-beta) [Ismail Dhorat]
-* a0edd4e 2013-10-04 | Using ARGV [Ismail Dhorat]
-* bd5d138 2013-10-04 | First Commit [Ismail Dhorat]</pre>
+* 27b8b27 2013-10-06 | Added a Rakefile. [Ismail Dhorat]
+* 23944f0 2013-10-06 | Moved hello.rb to lib [Ismail Dhorat]
+* 273edac 2013-10-06 | Add an author/email comment [Ismail Dhorat]
+* 9efd33e 2013-10-06 | Added a comment (v1) [Ismail Dhorat]
+* 8b9a1c6 2013-10-06 | Added a default value (v1-beta) [Ismail Dhorat]
+* f6f4d6b 2013-10-06 | Using ARGV [Ismail Dhorat]
+* f98d857 2013-10-06 | First Commit [Ismail Dhorat]</pre>
 <p>That&#8217;s a bit hard to read, but looking at the data we see that the &#8220;Updated Rakefile&#8221; commit was the last commit on the greet branch before merging.  Let&#8217;s reset the greet branch to that commit.</p>
 <h4>Execute:</h4>
 <pre class="instructions">git reset --hard &lt;hash&gt;</pre>
 <h4>Output:</h4>
-<pre class="sample">$ git reset --hard e901c8b
-HEAD is now at e901c8b Updated Rakefile
+<pre class="sample">$ git reset --hard 6e84bb4
+HEAD is now at 6e84bb4 Updated Rakefile
 </pre>
 <h2>Check the branch. <em>02</em></h2>
 <p>Look at the log for the greet branch.  We no longer have the merge commits in its history.</p>
@@ -93,19 +93,19 @@ HEAD is now at e901c8b Updated Rakefile
 <pre class="instructions">git hist --all</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git hist --all
-* e901c8b 2013-10-04 | Updated Rakefile (HEAD, greet) [Ismail Dhorat]
-* 0a9e32e 2013-10-04 | Hello uses Greeter [Ismail Dhorat]
-* 87bdd6f 2013-10-04 | Added greeter class [Ismail Dhorat]
-| * 425553b 2013-10-04 | Made interactive (master) [Ismail Dhorat]
-| * ae3810d 2013-10-04 | Added README [Ismail Dhorat]
+* 6e84bb4 2013-10-06 | Updated Rakefile (HEAD, greet) [Ismail Dhorat]
+* b90deb7 2013-10-06 | Hello uses Greeter [Ismail Dhorat]
+* 0a6c49b 2013-10-06 | Added greeter class [Ismail Dhorat]
+| * 736de04 2013-10-06 | Made interactive (master) [Ismail Dhorat]
+| * cad8e98 2013-10-06 | Added README [Ismail Dhorat]
 |/  
-* a9eb649 2013-10-04 | Added a Rakefile. [Ismail Dhorat]
-* 26c1a6d 2013-10-04 | Moved hello.rb to lib [Ismail Dhorat]
-* 8f90523 2013-10-04 | Add an author/email comment [Ismail Dhorat]
-* 86decba 2013-10-04 | Added a comment (v1) [Ismail Dhorat]
-* 702df14 2013-10-04 | Added a default value (v1-beta) [Ismail Dhorat]
-* a0edd4e 2013-10-04 | Using ARGV [Ismail Dhorat]
-* bd5d138 2013-10-04 | First Commit [Ismail Dhorat]</pre>
+* 27b8b27 2013-10-06 | Added a Rakefile. [Ismail Dhorat]
+* 23944f0 2013-10-06 | Moved hello.rb to lib [Ismail Dhorat]
+* 273edac 2013-10-06 | Add an author/email comment [Ismail Dhorat]
+* 9efd33e 2013-10-06 | Added a comment (v1) [Ismail Dhorat]
+* 8b9a1c6 2013-10-06 | Added a default value (v1-beta) [Ismail Dhorat]
+* f6f4d6b 2013-10-06 | Using ARGV [Ismail Dhorat]
+* f98d857 2013-10-06 | First Commit [Ismail Dhorat]</pre>
   </div>
 
   <div id="index">

@@ -60,7 +60,7 @@
 <p>This should show the latest commit made in the repository.  The SHA1 hash on your system is probably different that what is on mine, but you should see something like this.</p>
 <h4>Output:</h4>
 <pre class="sample">$ git hist --max-count=1
-* a9eb649 2013-10-04 | Added a Rakefile. (HEAD, master) [Ismail Dhorat]</pre>
+* 27b8b27 2013-10-06 | Added a Rakefile. (HEAD, master) [Ismail Dhorat]</pre>
 <h2>Dumping the Latest Commit <em>02</em></h2>
 <p>Using the SHA1 hash from the commit listed above &#8230;</p>
 <h4>Execute:</h4>
@@ -68,13 +68,13 @@
 git cat-file -p &lt;hash&gt;</pre>
 <p>Here&#8217;s my output &#8230;</p>
 <h4>Output:</h4>
-<pre class="sample">$ git cat-file -t a9eb649
+<pre class="sample">$ git cat-file -t 27b8b27
 commit
-$ git cat-file -p a9eb649
+$ git cat-file -p 27b8b27
 tree 2ab5200289e9065e64e20261dc5791e3243506eb
-parent 26c1a6dddae5b0b5ef964c50756ffb575741e30d
-author Ismail Dhorat &lt;ismail@codiez.co.za&gt; 1380870693 +0200
-committer Ismail Dhorat &lt;ismail@codiez.co.za&gt; 1380870693 +0200
+parent 23944f076b726bba8fbe1a42acb8567a823fa7bc
+author Ismail Dhorat &lt;ismail@codiez.co.za&gt; 1381062370 +0200
+committer Ismail Dhorat &lt;ismail@codiez.co.za&gt; 1381062370 +0200
 
 Added a Rakefile.
 </pre>
