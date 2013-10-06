@@ -42,7 +42,11 @@ h2. Get the Tutorial package.
 p. Git the tutorial package from either:
 
 * The memory sticks provided in the tutorial
-* The URL "http://www.codiez.co.za/git-labs/git_tutorial.zip":http://www.codiez.co.za/git-labs/git_tutorial.zip
+* The URL 
+"http://www.codiez.co.za/git-labs/git_tutorial.zip":http://www.codiez.co.za/git-labs/git_tutorial.zip
+
+or
+"https://dl.dropboxusercontent.com/u/3318148/codiez/git_tutorial.zip":https://dl.dropboxusercontent.com/u/3318148/codiez/git_tutorial.zip
 
 h2. Unzip the tutorial
 
